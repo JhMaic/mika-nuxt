@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div></div>
     <div>HERE IS HELLO</div>
     <div>
       <button @click="showGlobalState">show global states</button>

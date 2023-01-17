@@ -2,6 +2,7 @@
   <div>
     <button @click="btn">toHello(only for logged-in user)</button>
     <button @click="login">login</button>
+    <button @click="navigateTo('amazon-login')">login With Amazon</button>
   </div>
 </template>
 

@@ -1,4 +1,5 @@
 export const useGlobalState = createGlobalState(() => {
+  const liffObject = ref<any>();
   const isLogin = ref(false);
   const isInClient = ref(false);
   const code = ref<string>();
@@ -6,5 +7,13 @@ export const useGlobalState = createGlobalState(() => {
   const liffUrl = ref<string>();
   const liffClientId = ref<string>();
 
-  return reactive({ isLogin, isInClient, code, state, liffUrl, liffClientId });
+  return reactive({
+    liffObject,
+    isLogin,
+    isInClient,
+    code,
+    state,
+    liffUrl,
+    liffClientId,
+  });
 });
