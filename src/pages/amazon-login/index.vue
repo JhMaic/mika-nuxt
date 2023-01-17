@@ -103,6 +103,7 @@ onMounted(() => {
 
 const authorize = () => {
   const options: Options = { scope: "profile", pkce: true, popup: false };
+  // const options: Options = { scope: "profile", pkce: true };
   console.log("[LOG]redirect", new URL(window.location.href).href);
   // ログイン処理
   amazon.Login.authorize(options, new URL(window.location.href).href);
