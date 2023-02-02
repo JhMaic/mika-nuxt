@@ -10,8 +10,6 @@ const lineRedirectedCheck = (urlQuery: any) => {
     globalState.state = urlQuery.state;
     globalState.liffUrl = urlQuery.liffRedirectUri;
     globalState.liffClientId = urlQuery.liffClientId;
-    globalState.isLogin = true;
-    globalState.isInClient = useNuxtApp().$liff.isInClient();
     return urlQuery.liffRedirectUri;
   }
   return false;
